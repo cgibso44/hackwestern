@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/frame"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#20aec2"
+        android:layout_weight="12"
+        android:id="@+id/id">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/search"
+            android:hint="Search"
+            android:paddingLeft="25dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:maxLines="1"
+            android:background="@drawable/textbox"
+            android:ems="10"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:background="#20aec2"
+            android:src="@drawable/searchicon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:onClick="clickSearch"
+            android:id="@+id/go"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"/>
+    <View
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/discover"
+            android:scaleType="fitCenter"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="#FFFFFF"
+            android:onClick="clickDiscover"
+            android:id="@+id/discover" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/now"
+            android:scaleType="fitCenter"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="#FFFFFF"
+            android:onClick="clickPlay"
+            android:id="@+id/play_button" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/broadcast"
+            android:scaleType="fitCenter"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="#FFFFFF"
+            android:onClick="clickMe"
+            android:id="@+id/me" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="#FFFFFF"
+            android:onClick="clickResults"
+            android:id="@+id/results" />
+
+    </LinearLayout>
+
+</LinearLayout>
